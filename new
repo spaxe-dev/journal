@@ -1,0 +1,15 @@
+cp -r ~/.config/hypr ~/hypr-backups/backup-$(date +%F-%H%M)/
+cp -r ~/.config/waybar ~/hypr-backups/backup-$(date +%F-%H%M)/ 2>/dev/null
+cp -r ~/.config/wofi ~/hypr-backups/backup-$(date +%F-%H%M)/ 2>/dev/null
+cp -r ~/.config/ghostty ~/hypr-backups/backup-$(date +%F-%H%M)/ 2>/dev/null
+
+ls ~/hypr-backups/backup-*
+
+mkdir -p ~/dotfiles
+
+cp -r ~/.config/hypr ~/dotfiles/
+cp -r ~/.config/waybar ~/dotfiles/
+cp -r ~/.config/wofi ~/dotfiles/
+cp -r ~/.config/ghostty ~/dotfiles/
+
+tree ~/dotfiles
