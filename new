@@ -1,9 +1,11 @@
-mkdir -p ~/backup-pre-fxp
+animations {
+  enabled = yes
 
-cp -r ~/.config/hypr ~/backup-pre-fxp/ 2>/dev/null
-cp -r ~/.config/waybar ~/backup-pre-fxp/ 2>/dev/null
-cp -r ~/.config/wofi ~/backup-pre-fxp/ 2>/dev/null
-cp -r ~/.config/ghostty ~/backup-pre-fxp/ 2>/dev/null
+  bezier = fast, 0.2, 0.9, 0.1, 1.0
 
-cp ~/.bashrc ~/backup-pre-fxp/ 2>/dev/null
-cp ~/.zshrc ~/backup-pre-fxp/ 2>/dev/null
+  animation = windows, 1, 3.5, fast
+  animation = windowsIn, 1, 3.0, fast
+  animation = windowsOut, 1, 2.5, fast
+  animation = fade, 1, 2.5, fast
+  animation = workspaces, 1, 3.0, fast
+}
