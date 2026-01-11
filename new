@@ -1,11 +1,4 @@
-animations {
-  enabled = yes
-
-  bezier = fast, 0.2, 0.9, 0.1, 1.0
-
-  animation = windows, 1, 3.5, fast
-  animation = windowsIn, 1, 3.0, fast
-  animation = windowsOut, 1, 2.5, fast
-  animation = fade, 1, 2.5, fast
-  animation = workspaces, 1, 3.0, fast
-}
+# Nautilus – modern rules
+windowrulev2 = float, class:^(org.gnome.Nautilus)$
+windowrulev2 = move cursor, class:^(org.gnome.Nautilus)$
+windowrulev2 = noanim, class:^(org.gnome.Nautilus)$
